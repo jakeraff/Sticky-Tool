@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sticky Tool": {
+      "commandName": "Project",
+      "commandLineArgs": "--restore"
+    }
+  }
+}
