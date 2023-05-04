@@ -9,6 +9,13 @@ namespace Sticky_Tool
 {
     public class Methods 
     {
+
+        public static string[] validTypes = new string[] {
+            "sethc.exe (Sticky Keys)",
+            "utilman.exe (Accessibility UI)",
+            "narrator.exe (Narrator)",
+            "magnify.exe (Magnifier)",
+            "osk.exe (On-Screen Keyboard)"};
         public static void Stick(String oldEXE, String newEXE)
         {
             Microsoft.Win32.RegistryKey key;

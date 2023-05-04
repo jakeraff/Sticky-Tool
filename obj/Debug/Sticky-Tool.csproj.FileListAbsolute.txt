@@ -34,3 +34,5 @@ C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Debug\tr\System.CommandLine.resou
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Debug\zh-Hans\System.CommandLine.resources.dll
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Debug\zh-Hant\System.CommandLine.resources.dll
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Debug\Sticky-Tool.csproj.CopyComplete
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Debug\CommandLine.dll
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Debug\CommandLine.xml

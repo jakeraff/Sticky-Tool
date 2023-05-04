@@ -79,8 +79,12 @@ namespace Sticky_Tool
             }
             catch (Exception err)
             {
-                string title = "Failed!";
                 string message = err.Message;
+                if (err.GetType().Name.ToString() == "ArgumentException")
+                {
+                    message = "Nothing to restore!";
+                }
+                string title = "Failed!";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(message, title, buttons, MessageBoxIcon.Error);
             }
@@ -114,6 +118,27 @@ namespace Sticky_Tool
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel1.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://github.com/rafftechau/sticky-tool");
         }
     }
 }
