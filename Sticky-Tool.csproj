@@ -59,7 +59,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>OIG.ico</ApplicationIcon>
+    <ApplicationIcon>main.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Sticky_Tool.Program</StartupObject>
@@ -154,6 +154,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="main.ico" />
     <Content Include="OIG.ico" />
     <None Include="Resources\Main Logo.png" />
     <Content Include="Resources\main.ico" />
