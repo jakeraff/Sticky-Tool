@@ -3,10 +3,10 @@
 
 This is a simple tool for Windows allows you to quickly, easily and silently replace the following System32 executables with any executable of your choice.
 
-sethc.exe (Sticky Keys ... hence the name Sticky Tool)
-utilman.exe (Accessibility UI)
-narrator.exe (Narrator)
-magnify.exe (Magnifier)
+sethc.exe (Sticky Keys ... hence the name Sticky Tool)<br>
+utilman.exe (Accessibility UI)<br>
+narrator.exe (Narrator)<br>
+magnify.exe (Magnifier)<br>
 osk.exe (On-Screen Keyboard)
 
 Sticky Tool was inspired from the old Sticky Keys trick used to gain Administrator privileges on Windows computers, however, this tool is not for that. Sticky Tool works by adding 'Debugger' registry entries for each executable listed.
