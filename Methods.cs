@@ -26,7 +26,7 @@ namespace Sticky_Tool
             File.Copy(newEXE, $@"{saveDir.FullName}\Sticky-{oldEXE}", true);
             Microsoft.Win32.RegistryKey key;
             key = Microsoft.Win32.Registry.LocalMachine.CreateSubKey(regPath + oldEXE);
-            key.SetValue("Debugger", newEXE);
+            key.SetValue("Debugger", $@"{saveDir.FullName}\Sticky-{oldEXE}");
             key.Close();
         }
 
