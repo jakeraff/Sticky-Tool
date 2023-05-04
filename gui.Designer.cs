@@ -101,7 +101,7 @@ namespace Sticky_Tool
             // FileSelector
             // 
             this.FileSelector.Filter = "Executables (*.exe)|*.exe";
-            this.FileSelector.InitialDirectory = "C:\\Windows\\System32";
+            this.FileSelector.InitialDirectory = Environment.CurrentDirectory;
             this.FileSelector.Title = "Select Replacement File";
             this.FileSelector.FileOk += new System.ComponentModel.CancelEventHandler(this.FileSelector_FileOk);
             // 

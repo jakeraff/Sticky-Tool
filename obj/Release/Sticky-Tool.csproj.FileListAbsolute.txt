@@ -1,11 +1,3 @@
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.AssemblyReference.cache
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.SuggestedBindingRedirects.cache
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky_Tool.gui.resources
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky_Tool.Properties.Resources.resources
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.GenerateResource.cache
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.CoreCompileInputs.cache
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.exe
-C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.pdb
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\Sticky-Tool.exe.config
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\Sticky-Tool.exe
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\Sticky-Tool.pdb
@@ -35,4 +27,12 @@ C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\ru\System.CommandLine.res
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\tr\System.CommandLine.resources.dll
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\zh-Hans\System.CommandLine.resources.dll
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\bin\Release\zh-Hant\System.CommandLine.resources.dll
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.AssemblyReference.cache
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.SuggestedBindingRedirects.cache
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky_Tool.gui.resources
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky_Tool.Properties.Resources.resources
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.GenerateResource.cache
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.CoreCompileInputs.cache
 C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.csproj.CopyComplete
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.exe
+C:\Users\jacob\OneDrive\Github\Sticky-Tool\obj\Release\Sticky-Tool.pdb

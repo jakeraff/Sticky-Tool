@@ -73,9 +73,9 @@ namespace Sticky_Tool
                             }
                             var realType = Methods.validTypes[index].Split(' ')[0];
 
-                            var realPath = (o.Replace.Replace("\"", "")).ToString();
+                            var realPath = Path.GetFullPath(o.Replace);
 
-                            if (!(File.Exists(realPath)))
+                        if (!(File.Exists(realPath)) || !(realPath.EndsWith(".exe")))
                             {
                                 throw new FileNotFoundException("Provided filepath is not valid!");
                             }
