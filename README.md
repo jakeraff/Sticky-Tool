@@ -17,7 +17,7 @@ Sticky Tool can also be deployed silently through Microsoft Intune using the com
 
 * '--type <type>' to specify which executable to replace out of the above list (e.g. --type sethc)
 * '--replace <file path>' used in conjunction with '--type' to specify the replacement executable (e.g. --replace "C:\test.exe")
-* '--restore' used in conjunction with '--type' to remove the modified sticky keys executable and restores the original
+* '--restore' used in conjunction with '--type' to revert any changes to the chosen System32 executable (e.g. --restore)
 
 Plans for the future include adding automatic Windows Defender exemptions for the user-specified replacement executable as sometimes, Windows Defender flags it as malicious. This isn't an issue for those wanting to deploy it through Intune as you can add Defender exemptions through the Device Restrictions configuration profile, however, it is something to keep in mind for personal use until I add the functionality.
 
