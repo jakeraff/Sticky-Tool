@@ -21,6 +21,9 @@ namespace Sticky_Tool
 
             [Option("restore", HelpText = "Specifies if restore is needed")]
             public bool Restore { get; set; }
+
+            [Option("register", HelpText = "Registers the replacement executable as a program")]
+            public bool Register { get; set; }
         }
 
         [DllImport("kernel32.dll")]
@@ -56,53 +59,60 @@ namespace Sticky_Tool
                         Console.WriteLine("--type must be provided!");
                         Console.WriteLine();
                     }
-                    else if (o.Replace != null && o.Restore)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine("Cannot use --replace with --restore!");
-                        Console.WriteLine();
-                    }
-                    else if (o.Replace != null)
+                    else if (o.Replace != null && !(o.Restore))
                     {
                         try
                         {
-                            int index = Array.FindIndex(Methods.validTypes, element => element.Contains(o.ExeType));
-                            if (index == -1)
+                            if (!(o.ExeType.EndsWith(".exe")))
+                            {
+                                o.ExeType += ".exe";
+                            }
+
+                            if (!(Array.Exists(Methods.validTypes, element => element[0] == o.ExeType.ToString())))
                             {
                                 throw new InvalidOperationException("Provided type is not valid!");
                             }
-                            var realType = Methods.validTypes[index].Split(' ')[0];
 
+                            var realType = o.ExeType.ToString();
                             var realPath = Path.GetFullPath(o.Replace);
 
-                        if (!(File.Exists(realPath)) || !(realPath.EndsWith(".exe")))
+                            if (!(File.Exists(realPath)) || !(realPath.EndsWith(".exe")))
                             {
                                 throw new FileNotFoundException("Provided filepath is not valid!");
                             }
 
-                            Methods.Stick(realType, realPath);
+                            Methods.Replace(realType, realPath);
                             Console.WriteLine();
                             Console.WriteLine($"Successfully replaced {realType} with {realPath}!");
                             Console.WriteLine();
+
+                            if (o.Register)
+                            {
+                                Methods.Register(realType);
+                                Console.WriteLine();
+                                Console.WriteLine($"Successfully registered {realType} as a program!");
+                                Console.WriteLine();
+                            }
                         }
                         catch (Exception err)
                         {
                             Console.WriteLine();
                             Console.WriteLine(err.Message);
                             Console.WriteLine();
-                            Console.WriteLine("Use --help to view valid arguments.");
                         }
                     }
-                    else if (o.Restore)
+                    else if (o.Restore && !(o.Register) && (o.Replace == "" || o.Replace == null))
                     {
                         try
                         {
-                            int index = Array.FindIndex(Methods.validTypes, element => element.Contains(o.ExeType));
-                            if (index == -1)
+                            if (!(o.ExeType.EndsWith(".exe"))) { o.ExeType += ".exe"; }
+
+                            if (!(Array.Exists(Methods.validTypes, row => row[0] == o.ExeType.ToString())))
                             {
                                 throw new InvalidOperationException("Provided type is not valid!");
                             }
-                            var realType = Methods.validTypes[index].Split(' ')[0];
+
+                            var realType = o.ExeType.ToString();
 
                             Methods.Restore(realType);
                             Console.WriteLine();
@@ -122,13 +132,6 @@ namespace Sticky_Tool
                             }
                             Console.WriteLine();
                         }
-                    }
-                    else if (o.ExeType != null && o.Replace == null && o.Restore == false)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine("--type must be used in conjunction with either --replace or --restore!");
-                        Console.WriteLine("--replace must have a filepath value!");
-                        Console.WriteLine();
                     }
                     else
                     {

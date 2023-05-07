@@ -51,9 +51,9 @@ namespace Sticky_Tool
             {
                 var oldEXE = comboBox1.Text.Split(' ')[0];
                 var newEXE = FileSelector.FileName;
-                Methods.Stick(oldEXE, newEXE);
+                Methods.Replace(oldEXE, newEXE);
                 string title = "Success!";
-                string message = $"{oldEXE} has been restored successfully.";
+                string message = $"{oldEXE} has been replaced successfully.";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(message, title, buttons, MessageBoxIcon.Information);
             }

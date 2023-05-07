@@ -54,12 +54,10 @@ namespace Sticky_Tool
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "sethc.exe (Sticky Keys)",
-            "utilman.exe (Accessibility UI)",
-            "narrator.exe (Narrator)",
-            "magnify.exe (Magnifier)",
-            "osk.exe (On-Screen Keyboard)"});
+            foreach (var type in Methods.validTypes)
+            {
+                this.comboBox1.Items.Add($"{type[0]} ({type[1]})");
+            }
             this.comboBox1.Location = new System.Drawing.Point(15, 149);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(346, 24);
@@ -151,7 +149,7 @@ namespace Sticky_Tool
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(142, 79);
+            this.label3.Location = new System.Drawing.Point(130, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 16);
             this.label3.TabIndex = 8;
@@ -162,12 +160,12 @@ namespace Sticky_Tool
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(96, 95);
+            this.linkLabel1.Location = new System.Drawing.Point(110, 95);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(184, 16);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Raffoul Technologies (Github)";
+            this.linkLabel1.Text = "Jacob Raffoul (Github)";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // gui
