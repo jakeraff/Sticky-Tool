@@ -20,7 +20,7 @@ Sticky Tool can also be deployed silently through Microsoft Intune using the com
 * `--register` used in conjunction with `--replace` to register the replacement executable as a program that can be uninstalled via control panel.
   * The uninstall string is as follows:<br>
   `for /f "tokens=2*" %i in ('REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Sticky-INSERT_TYPE.exe" /v UninstallString') do start "" %j`
-* '--restore' used in conjunction with '--type' to revert any changes to the chosen System32 executable. E.g. --restore
+* `--restore` used in conjunction with `--type` to revert any changes to the chosen System32 executable. E.g. `--restore`
 
 Plans for the future include getting the executable signed and adding automatic Windows Defender exemptions for the user-specified replacement executable as sometimes, Windows Defender flags it as malicious. This isn't an issue for those wanting to deploy it through Intune as you can add Defender exemptions through the Device Restrictions configuration profile, however, it is something to keep in mind for personal use until I add the functionality.
 
