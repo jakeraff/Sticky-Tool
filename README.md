@@ -1,5 +1,5 @@
 # Sticky-Tool
-![Sticky-Tool icon](https://github.com/nightleyxx/Sticky-Tool/blob/main/Icon/image.png?raw=true)
+![Sticky-Tool icon](https://github.com/rafftechau/Sticky-Tool/blob/main/Icon/image.png?raw=true)
 
 This is a simple tool for Windows allows you to quickly, easily and silently replace the following System32 executables with any executable of your choice.
 
